@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Levi URL Shortener</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="./assets/link-svg.svg" type="image/x-icon">
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="header-content">
+            <a href="#logo" class="logo">
+                <h1>levi.ly®</h1>
+            </a>
+            <div class="header-content-right">
+                <nav class="nav">
+                    <a href="#about-project" class="nav-link">About</a>
+                    <a href="#team-details" class="nav-link">ContactUs</a>
+                </nav>
+                <a href="https://github.com/omteja04/levi" target="_blank" class="source-code-button">Source Code</a>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="main-section">
+            <div class="main-section__text">
+
+                <p class="main-section-title">Shrink Your Links, Expand Your Reach :)</p>
+                <p class="main-section-data">levi.ly is an efficient and easy-to-use URL shortening service that
+                    streamlines your online
+                    experience.
+                </p>
+            </div>
+
+            <form id="form">
+                <input type="text" id="long-url" name="long-url" class="long-url"
+                    placeholder="https://www.example.com/looooong-url" required>
+                <button type="submit" id="shorten-button">Shorten Now!</button>
+            </form>
+
+            <div class="result-section" id="result-section" style="display: none;">
+
+                <p class="result-section-title">Your shortened URL:</p>
+                <div class="result-content">
+                    <p id="shortUrlDisplay"></p>
+                    <button class="image-button" onclick="copyToClipboard()">
+                        <img src="./assets/copy.png" alt="Copy Now!" id="copy-icon" class="copy-icon">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
